@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    opacity: 90%;
+    transition: all ease 300ms;
+}
+
+.card__image{
+    z-index: 0;
+}
+
+.card:hover{
+    opacity: 100%;
+    transition: all ease 300ms;
+}
+
+.card__overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    transition: all ease 300ms;
+}
+
+.card__overlay:hover{
+    opacity: 0;
+    transition: all ease 300ms;
+}
+
+.card__overlay__text{
+    opacity: 100%;
+    color: white;
+    font-size: x-large;
+}
